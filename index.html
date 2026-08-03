@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>VitD Tickets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="posterdiv" class="panel">
+    <img src="https://images.squarespace-cdn.com/content/v1/54fa5b6be4b07e462fd5a3f0/d34dffc0-145b-4891-86de-0d00bd84105d/The+Visitor+in+the+Doorway+cover+%281%29.png?format=1500w" alt="The poster for The Visitor in the Doorway" id="poster">
+  </div>
+
+  <div id="rightSide" class="panel">
+    <div id="viewer">
+
+      <div id="header">
+        <h1 id="myHeader" class="panelHeader">Ticket Reservation</h1>
+        <hr>
+      </div>
+
+      <div id="signup">
+        <form id="signupForm">
+          <label for="cars">Select a date:</label>
+          <select id="dateSelect" name="date" class="signUpField" required>
+            <option value="2026-10-01">Tursday, October 1</option>
+            <option value="2026-10-02">Friday, October 2</option>
+            <option value="2026-10-03">Saturday, October 3</option>
+          </select>
+          <p id="details"></p>
+          <input placeholder="First Name" name="fname" class="signUpField" required>
+          <input placeholder="Last Name" name="lname" class="signUpField" required>
+          <input placeholder="Party Size" type="number" name="quantity" class="signUpField" min="1" id="psize" required>
+          <input id="submitButton" type="submit" value="Reserve Space" class="button">
+        </form>
+      </div>
+
+    </div>
+    <div id="footer">
+      <h3>Please read</h3>
+      <ul>
+        <li>Admission is free</li>
+      </ul>
+      <p id="contact">Please contact Timothy Snyder (tsnyder@gustavus.edu) with any questions or concerns</p>
+    </div>
+  </div>
+</body>
+
+</html>
