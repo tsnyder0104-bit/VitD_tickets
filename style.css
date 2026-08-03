@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: minmax(300px, 45%) 1fr;
+  min-height: 100vh;
+}
+
+/* Left column */
+#posterdiv {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 1rem;
+}
+
+#poster {
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+/* Right column */
+#rightSide {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+#viewer {
+  flex: 1;
+}
+
+#myHeader {
+  text-align: center;
+}
+
+#signupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.signUpField,
+.button {
+  width: 92.5%;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.button,
+#dateSelect {
+  width: 100%;
+}
+
+#footer {
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  #posterdiv {
+    padding: 0;
+  }
+
+  #rightSide {
+    padding: 1rem;
+  }
+
+  .signUpField {
+    width: 91%;
+  }
+}
