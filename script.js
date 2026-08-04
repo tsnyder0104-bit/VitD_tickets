@@ -75,7 +75,7 @@ function displayInfo(key) {
 
   document.getElementById("psize").max = space;
 
-  document.getElementById("details").textContent = `Space Remaining: ${space}`;
+  document.getElementById("details").textContent = `Seats Remaining: ${space}`;
 }
 
 // -------------------- REFRESH PIPELINE --------------------
