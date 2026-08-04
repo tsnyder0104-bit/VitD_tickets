@@ -38,12 +38,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  align-items: center;
+  align-items: left;
 }
 
 .signUpField,
 .button {
-  width: 92.5%;
+  width: 96%;
   padding: 0.75rem;
   font-size: 1rem;
 }
@@ -56,6 +56,11 @@ body {
 #footer {
   margin-top: 2rem;
   border-top: 1px solid #ccc;
+}
+
+li {
+  font-size: 18px;
+  margin: 2px 0;
 }
 
 /* Mobile layout */
@@ -71,8 +76,17 @@ body {
   #rightSide {
     padding: 1rem;
   }
+  
+  #signupForm {
+  align-items: center;
+}
 
   .signUpField {
     width: 91%;
+  }
+  
+  li {
+  font-size: 16px;
+  margin: 2px 0;
   }
 }
