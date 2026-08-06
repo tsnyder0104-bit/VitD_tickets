@@ -73,9 +73,19 @@ function displayInfo(key) {
 
   const space = capacity - match.reserved;
 
-  document.getElementById("psize").max = space;
-
-  document.getElementById("details").textContent = `Seats Remaining: ${space}`;
+  if (space > 0) {
+    document.getElementById("psize").max = space;
+    document.getElementById("details").textContent = `Seats Remaining: ${space}`;
+    document.querySelectorAll(".removeable").forEach((element) => {
+      element.style.display = "";
+    });
+  }
+  else {
+    document.getElementById("details").textContent = `Sold Out`;
+    document.querySelectorAll(".removeable").forEach((element) => {
+      element.style.display = "none";
+    });
+  }
 }
 
 // -------------------- REFRESH PIPELINE --------------------
