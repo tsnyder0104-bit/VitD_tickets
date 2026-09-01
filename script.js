@@ -3,7 +3,7 @@ const WEB_APP_URL =
 
 // -------------------- STATE --------------------
 let data = [];
-const capacity = 36;
+const capacity = 34;
 
 // -------------------- DATA --------------------
 async function loadData() {
